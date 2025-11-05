@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Corner Music</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* Barra superior */
+    .top-bar {
+      width: 100%;
+      background-color: #0a0a0a;
+      border-bottom: 1px solid #222;
+      text-align: center;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      padding: 6px 0;
+      color: #ccc;
+    }
+
+    /* Header principal */
+    header {
+      width: 100%;
+      background-color: #000;
+      border-bottom: 1px solid #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 45px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #fff;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 3px;
+    }
+
+    .logo {
+      width: 55px;
+      height: auto;
+    }
+
+    /* Hero / portada */
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url('bg.jpg') center/cover no-repeat; /* cambia bg.jpg por tu imagen */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero .overlay {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 25px;
+    }
+
+    .hero button {
+      background: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+      padding: 10px 25px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0a0a0a;
+      padding: 40px 0;
+      text-align: center;
+      border-top: 1px solid #222;
+    }
+
+    footer p {
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    .socials {
+      margin-top: 10px;
+    }
+
+    .socials a {
+      color: #ccc;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div class="top-bar">
+    NUEVO LANZAMIENTO DISPONIBLE EN TODAS LAS PLATAFORMAS | TOUR 2025 – ENTRADAS YA DISPONIBLES
+  </div>
+
+  <!-- Header principal -->
+  <header>
+    <nav>
+      <a href="index.html" class="active">INICIO</a>
+      <a href="artistas.html">ARTISTAS</a>
+      <a href="albumes.html">ÁLBUMES</a>
+      <img src="logo.png" alt="Happy Corner Music Logo" class="logo">
+      <a href="noticias.html">NOTICIAS</a>
+      <a href="eventos.html">EVENTOS</a>
+    </nav>
+  </header>
+
+  <!-- Hero / portada -->
+  <section id="inicio" class="hero">
+    <div class="overlay">
+      <h1>HAPPY CORNER MUSIC</h1>
+      <p>El sonido urbano de la nueva generación.</p>
+      <button>Ver Lanzamientos</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Happy Corner Music</p>
+    <div class="socials">
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+      <a href="#">Spotify</a>
+    </div>
+  </footer>
+
+</body>
+</html>
